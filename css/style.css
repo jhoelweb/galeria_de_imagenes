@@ -445,3 +445,22 @@ body{
   height:auto;
   display:block;
 }
+
+/*  iPad / tablet */
+@media (max-width: 1024px) {
+  .hero-texto {
+    max-width: 600px;
+    padding: 0 40px 70px 40px;
+    transform: translateY(30px);
+  }
+}
+
+/*  teléfono */
+@media (max-width: 600px) {
+  .hero-texto {
+    max-width: 100%;
+    padding: 0 20px 40px 20px;
+    transform: translateY(10px);
+    text-align: center;
+  }
+}
