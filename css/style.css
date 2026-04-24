@@ -446,21 +446,63 @@ body{
   display:block;
 }
 
-/*  iPad / tablet */
+/*  TABLET */
 @media (max-width: 1024px) {
+  .hero {
+    min-height: 85vh;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .hero img {
+    object-position: center top;
+  }
+
   .hero-texto {
-    max-width: 600px;
     padding: 0 40px 70px 40px;
-    transform: translateY(30px);
+    text-align: center;
+  }
+
+  .hero-texto h1 {
+    font-size: 70px;
+  }
+
+  .hero-texto p {
+    font-size: 18px;
   }
 }
 
-/*  teléfono */
+/*  TELÉFONO */
 @media (max-width: 600px) {
+  .hero {
+    min-height: 72vh;
+    margin-bottom: 25px;
+    justify-content: center;
+  }
+
+  .hero img {
+    object-fit: cover;
+    object-position: center top;
+  }
+
   .hero-texto {
-    max-width: 100%;
-    padding: 0 20px 40px 20px;
-    transform: translateY(10px);
+    padding: 0 18px 45px 18px;
     text-align: center;
+    max-width: 100%;
+  }
+
+  .mini-etiqueta {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .hero-texto h1 {
+    font-size: 42px;
+    line-height: 1;
+  }
+
+  .hero-texto p {
+    font-size: 15px;
+    line-height: 1.5;
   }
 }
